@@ -1,0 +1,56 @@
+/* Poppins Fonts */
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: 'poppins-light';
+    src: url('../fonts/poppins/Poppins-Light.ttf');
+}
+@font-face {
+    font-family: 'poppins-medium';
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'poppins-smbold';
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'poppins-xbold';
+    src: url('../fonts/poppins/Poppins-ExtraBold.ttf');
+}
+
+/* Konnect Fonts */
+@font-face {
+    font-family: 'konnect';
+    src: url('../fonts/konnect/KonnectRegular.otf');
+}
+@font-face {
+    font-family: 'konnect-bold';
+    src: url('../fonts/konnect/KonnectBold.otf');
+}
+@font-face {
+    font-family: 'konnect-light';
+    src: url('../fonts/konnect/KonnectLight.otf');
+}
+@font-face {
+    font-family: 'konnect-medium';
+    src: url('../fonts/konnect/KonnectMedium.otf');
+}
+@font-face {
+    font-family: 'konnect-smbold';
+    src: url('../fonts/konnect/KonnectSemiBold.otf');
+}
+@font-face {
+    font-family: 'konnect-xbold';
+    src: url('../fonts/konnect/KonnectExtraBold.otf');
+}
+
+@font-face {
+    font-family: 'pushpenny';
+    src: url('../fonts/PushPenny-Book.ttf');
+}

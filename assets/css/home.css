@@ -1,0 +1,400 @@
+/* Home section */
+section#home {
+    height: 80vh;
+    min-height: 550px;
+    background-color: #F7F7F7;
+    position: relative;
+    overflow: hidden;
+}
+.home-title-wrapper {
+    padding: 30px 0 20px;
+    position: relative;
+    top: 8%;
+}
+.home-title-block {
+    max-width: 620px;
+    position: relative;
+    z-index: 1;
+}
+h1.home-title {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 62px;
+    margin: 0;
+}
+p.home-title-desc {
+    font-size: 18px;
+    line-height: 24px;
+    color: #222222;
+}
+.bold-txt.top-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #353D46;
+    margin-bottom: 20px;
+}
+img.home-section-img {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    bottom: 0;
+}
+
+button.learn-more-btn {
+    margin-top: 20px;
+    background: #222222;
+    border-radius: 11px;
+    color: white;
+    border: none;
+    height: 54px;
+    width: 180px;
+    cursor: pointer;
+}
+
+@media(max-width: 992px) {
+    img.home-section-img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        opacity: 0.2;
+        max-width: initial;
+    }
+    .home-title-wrapper {
+        top: 54%;
+        transform: translateY(-50%);
+    }
+}
+@media(max-width: 600px){
+    .home-title-wrapper {
+        border-radius: 0px 48px 48px 0px;
+        padding: 30px 20px 20px;
+        position: relative;
+    }
+    h1.home-title {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .home-title-wrapper {
+        top: auto;
+        transform: translateY(-50%);
+        bottom: -60%;
+    }
+}
+/* end of Home section */
+
+/* Why-We-Exist Section */
+#why-we-exist {
+    background-color: white;
+    padding: 60px 0 50px;
+}
+#why-we-exist .wwe-txt-title {
+    font-size: 36px;
+}
+.wwe-txt-desc {
+    font-size: 18px;
+    line-height: 28px;
+}
+.wwe-img {
+    width: 90%;
+}
+@media(max-width: 600px) {
+    .wwe-img {
+        width: 100%;
+    }
+}
+/* end of Why-We-Exist Section */
+
+/* Problems-And-Solutions Section */
+#problems-and-solutions {
+    background-color: #F7F7F7;
+    min-height: 200px;
+    position: relative;
+    padding: 50px 0;
+}
+#problems-and-solutions.active-green-bg {
+    background-color: var(--pry-color);
+}
+
+.green-curvy-line {
+    display: initial;
+}
+.white-curvy-line {
+    display: none;
+}
+.active-green-bg .green-curvy-line {
+    display: none;
+}
+.active-green-bg .white-curvy-line {
+    display: initial;
+}
+.green-curvy-line, .white-curvy-line {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.gcl-1 {
+    top: 15%;
+}
+.gcl-2 {
+    top: 60%;
+}
+.wcl-1 {
+    top: 40%;
+}
+.wcl-2 {
+    top: 70%;
+}
+
+.tabs-nav-wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 665px;
+    margin: auto;
+}
+.tabs-nav-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    border-bottom: 2px solid var(--pry-color);
+}
+.active-green-bg .tabs-nav-wrapper::before {
+    border-bottom: 2px solid #ffffff;
+}
+.tabs-nav-wrapper ul.tabs {
+    background: transparent;
+}
+.tabs-nav-wrapper .tabs .tab:not(:nth-child(2)) {
+    margin-right: 10px;
+}
+.tabs-nav-wrapper .tabs .tab a {
+    font-weight: 300 !important;
+    font-size: 21px;
+    line-height: 55px;
+    text-transform: none;
+    color: #222222 !important;
+    font-family: var(--pry-font-light);
+    /* padding-left: 0; */
+    background-color: transparent !important;
+}
+.tabs-nav-wrapper .tabs .tab a.active {
+    font-weight: bold !important;
+}
+.tabs-nav-wrapper .tabs .indicator {
+    background-color: var(--pry-color);
+    height: 3.5px;
+}
+.active-green-bg .tabs-nav-wrapper .tabs .indicator {
+    background-color: white;
+}
+
+.u-p-refrence-wrapper, .u-s-block-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin: 80px auto 30px;
+}
+.u-p-refrence-block {
+    background: linear-gradient(180deg, #FFFFFF 29.17%, #F2FFE1 89.58%);
+    border: 1px solid rgba(0, 102, 245, 0.122023);
+    box-sizing: border-box;
+    box-shadow: 0px 12px 21px 10px rgba(4, 30, 139, 0.0478311);
+    border-radius: 20px;
+    padding: 30px;
+}
+img.refrence-block-img {
+    height: 65px;
+}
+.u-s-block {
+    /* background: #FFFFFF; */
+    border: 1px solid rgba(0, 102, 245, 0.122023);
+    box-sizing: border-box;
+    box-shadow: 0px 12px 21px 10px rgba(4, 30, 139, 0.0478311);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.u-s-block::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 42.76%, #FFFFFF 55.47%);
+}
+.u-s-block-img-wrapper {
+    width: 100%;
+    height: 260px;
+    background-color: #F7F7F7;
+    background-size: 100%;
+}
+.u-s-block-desc {
+    padding: 30px 20px;
+    position: relative;
+    margin-top: -20px;
+}
+.u-s-block-desc p {
+    margin-top: 12px;
+}
+
+@media(max-width: 992px) {
+    .tabs-nav-wrapper {
+        width: 90%;
+        max-width: 585px;
+    }
+    /* .tabs-nav-wrapper::before {
+        width: 80%;
+    } */
+    .u-p-refrence-wrapper, .u-s-block-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    .tabs-nav-wrapper ul.tabs {
+        display: block;
+    }
+    .tabs-nav-wrapper .tabs .tab a {
+        font-size: 20px;
+    }
+}
+@media(max-width: 600px) {
+    #problems-and-solutions {
+        padding: 40px 20px 20px;
+    }
+    .u-p-refrence-wrapper, .u-s-block-wrapper {
+        grid-template-columns: 100%;
+        margin: 60px auto 30px;
+    }
+    .tabs-nav-wrapper {
+        width: 100%;
+    }
+    .tabs-nav-wrapper .tabs .tab {
+        width: 100%;
+        display: block;
+    }
+    .tabs-nav-wrapper ul.tabs {
+        height: 96px;
+        background: #fff;
+        border-radius: 12px;
+    }
+    .tabs-nav-wrapper .tabs .tab a {
+        font-size: 18px;
+    }
+    .tabs-nav-wrapper .indicator {
+        display: none;
+    }
+    .tabs-nav-wrapper::before {
+        display: none;
+    }
+    .tabs-nav-wrapper .tabs .tab a {
+        padding: 0;
+    }
+    .tabs-nav-wrapper .tabs .tab a.active {
+        background-color: #222222 !important;
+        color: white !important;
+        font-weight: 400 !important;
+        position: relative;
+    }
+}
+/*  end of Problems-And-Solutions Section */
+
+/* Gallery-Arts Section */
+section#gallery-arts {
+    margin: 60px 0 50px;
+}
+.grid-img-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.grid-img-block {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+}
+@media(max-width: 600px) {
+    section#gallery-arts {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+}
+/* end of Gallery-Arts Section */
+
+/* Our-Brands */
+#our-brands {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 20px 0;
+}
+hr.section-title-hr {
+    width: 60px;
+    border: none;
+    background: var(--pry-color);
+    height: 4px;
+}
+.section-header h4.section-title {
+    margin-bottom: 0;
+}
+.brands-container-wrapper {
+    display: flex;
+    animation: scrolling 25s linear infinite;
+    animation-play-state: running;
+    margin-top: 20px;
+}
+.brands-container-wrapper:hover {
+    animation-play-state: paused;
+}
+.brands-block-wrapper {
+    flex: 0 0 120vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brands-block-wrapper:not(:last-child) {
+    margin-right: 10px;
+}
+.brands-block-wrapper img {
+    filter: grayscale(1);
+}
+.brands-block-wrapper img:hover {
+    filter: grayscale(0);
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translatex(-120vw); }
+}
+/* end of Our-Brands */
+
+.spacing-section {
+    background: #F2F2F2;
+    height: 50px;
+}
+
+@media(max-width: 600px) {
+    .brands-block-wrapper-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+        padding-bottom: 0;
+        margin-top: 20px;
+    }
+    #why-we-exist {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .long-line-wrapper {
+        display: none;
+    }
+    .wwe-grid {
+        grid-template-columns: 100%;
+    }
+}
